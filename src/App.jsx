@@ -1,17 +1,17 @@
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/pages/home/Home';
 import Company from './components/pages/company/Company';
 import Contact from './components/pages/contact/Contact';
-import NewProject from './components/pages/newproject/NewProject';
+import NewProject from './components/pages/projects/newproject/NewProject';
 import Container from './components/layout/container/Container';
-import Sidebar from './components/layout/sidebar/Sidebar';
+import Navbar from './components/layout/navbar/Navbar';
 import Footer from './components/layout/footer/Footer';
 import Projects from './components/pages/projects/Projects';
 
 function App() {
   return (
     <Router>
-      <Sidebar />
+      <Navbar />
       <Switch>
         <Container customClass='min-height'>
           <Route exact path='/'>

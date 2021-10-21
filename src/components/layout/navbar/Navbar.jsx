@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import Container from '../container/Container';
-import styles from './Sidebar.module.css';
+import styles from './Navbar.module.css';
 import logo from '../../../images/costs_logo.png';
-function Sidebar() {
+function Navbar() {
   return (
-    <nav className={styles.sidebar}>
+    <nav className={styles.Navbar}>
       <Container>
         <Link to='/'>
           <img src={logo} alt='Costs' />
@@ -28,4 +28,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default Navbar;
